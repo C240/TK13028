@@ -42,7 +42,7 @@ for (int i = 0; i < COLS; i++){
     }   cout << endl;
 }
 
-  void bookSeat(int jenisKelas, int baris, char kolom) {
+  void bookingKursi(int jenisKelas, int baris, char kolom) {
     int kolomKonversi;
 
     switch (kolom)
@@ -112,7 +112,7 @@ for (int i = 0; i < COLS; i++){
             cin >> kolom;
 
             if(validasiBaris(jenisKelas, baris)){
-                bookSeat(jenisKelas, baris, kolom);
+                bookingKursi(jenisKelas, baris, kolom);
             } else {
                 cout << "Kelas yang dipilih tidak sesuai.\n";
             }
